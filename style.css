@@ -145,7 +145,7 @@ h1 {
     }
 
     .add-button {
-        width: 200px;
+        width: 250px;
         height:40px;
         margin: 10px;
         padding: 0;
@@ -174,5 +174,12 @@ h1 {
         margin: 10px;
     }
 
+    .area-complete {
+        max-width: fit-content;
+    }
+
+    .area-incomplete {
+        max-width: fit-content;
+    }
    
 }
