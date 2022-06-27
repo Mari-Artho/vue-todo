@@ -11,7 +11,7 @@ li {
 body {
     height: 100vh;
     background: #fcfcfa;
-    font-family: system-ui;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 .wrap {
@@ -21,10 +21,16 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: #333;
+}
+
 /*Input field*/
 .todo-form {
     text-align: center;
-    padding: 80px 0 50px;
+    padding: 50px 0 50px 0 ;
 }
 
 .todo-form > .add-button {
@@ -33,7 +39,7 @@ body {
 
 .input-text {
     width: 300px;
-    font-size: 30px;
+    font-size: 20px;
     padding: 12px 20px;
     border-radius: 5px;
     -webkit-appearance: none;
@@ -42,12 +48,12 @@ body {
 }
 
 .add-button {
-    font-size: 30px;
+    font-size: 20px;
     padding: 12px 20px;
     border: none;
     -webkit-appearance: none;
-    background: #ec5a1bee;
-    color: #eee;
+    background: #ffcbe9ee;
+    color: #333;
     border-radius: 4px;
 }
 
@@ -60,6 +66,7 @@ body {
 .list-area .area-complete,
 .list-area .area-incomplete {
     width: 480px;
+    margin:5px;
 }
 
 .list {
@@ -105,7 +112,7 @@ body {
 
 .todo-title {
     color: #333;
-    font-size: 32px;
+    font-size: 26px;
     text-align: center;
 }
 

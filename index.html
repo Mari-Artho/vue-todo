@@ -15,14 +15,14 @@
             <!--TODO Input field-->
             <section class="todo-form">
                 <input type="text" name="todo-text" class="input-text"
-                 placeholder="please input todo" :value="text" @input="inputText" />
+                 placeholder="New task" :value="text" @input="inputText" />
                 <button class="add-button" @click="addTodo">ADD</button>
             </section>
 
             <section class="list-area">
                 <!--DOING-->
                 <div class="area-incomplete">
-                    <p class="todo-title">DOING</p>
+                    <p class="todo-title">TODO</p>
                     <ul class="todo-area">
                         <li v-for="(item, i) in incompleteTodo" :keys = "i" class="list">
                             <span class="list-label">{{item.text}}</span>
