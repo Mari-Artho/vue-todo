@@ -21,8 +21,12 @@
                 <div class="area-incomplete">
                     <p class="todo-title">DOING</p>
                     <ul class="todo-area">
-                        <li v-for="(item, i) in todos" :keys = "i" class="list">
+                        <li v-for="(item, i) in incompleteTodo" :keys = "i" class="list">
                             <span class="list-label">{{item.text}}</span>
+                            <span class="button-area">
+                                <button class="list-button button-done" @click="toggleIsDone(item,id)">DONE</button>
+                                <button class="list-button button-delete" @click="deleteTodo(item,id)">DELETE</button>
+                            </span>
                         </li>
                     </ul>
                 </div>
