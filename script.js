@@ -66,8 +66,6 @@ const app = new Vue({
             return this.todos.filter(todo => todo.isDone === false);
         }
     }
-
-
 }); //vue()
 
 /* overwrite list in local storage with new list */
