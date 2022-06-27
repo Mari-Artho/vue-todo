@@ -40,15 +40,12 @@
                         <li v-for="(item, i) in doneTodo" :key="i" class="list">
                             <span class="list-label">{{item.text}}</span>
                             <span class="button-area">
-                                <button class="list-button" @click="toggleIsDone(item.id)">RETURN</button>
-                                <button class="list-button" @click="deleteTodo(item.id)">DELETE</button>
+                                <button class="list-button button-return" @click="toggleIsDone(item.id)">RETURN</button>
+                                <button class="list-button button-delete" @click="deleteTodo(item.id)">DELETE</button>
                             </span>
                         </li>
                     </ul>
                 </div>
-
-
-
             </section>
         </article>
     </div>
