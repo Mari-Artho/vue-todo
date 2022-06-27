@@ -31,10 +31,13 @@ h1 {
 .todo-form {
     text-align: center;
     padding: 50px 0 50px 0 ;
+    
 }
 
 .todo-form > .add-button {
     margin-left: 20px;
+    display:block;
+    text-align: center;
 }
 
 .input-text {
@@ -118,4 +121,58 @@ h1 {
 
 .todo-area {
     margin-top: 36px;
+}
+
+/* responsive */
+/* 480px, smart phone */
+@media screen and (max-width: 480px) {
+    body {
+        height:max-content;
+    }
+
+    .wrap {
+        width: 400px;
+    }
+
+    .todo-form {
+        display: flex;
+        flex-direction: column;
+        margin: 10px ;
+    }
+    .todo-form > .add-button {
+        margin-left: 0;
+        max-width: fit-content;
+    }
+
+    .add-button {
+        width: 200px;
+        height:40px;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .list-area {
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 0 0 10px 0;
+        margin-left: 15px;
+    }
+
+   .todo-title {
+        text-align: center;
+        margin-top: 20px;
+        width: 400px;
+    }
+
+    .list-label {
+        margin: 10px;
+    }
+
+   
 }
