@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="./style.css"/>
     <title>todo</title>
 </head>
+
 <body>
     <div id="app">
-        <h1>TO DO LIST</h1>
+        <h1>TODO LIST</h1>
         <article class="wrap">
+            <!--TODO Input field-->
             <section class="todo-form">
                 <input type="text" name="todo-text" class="input-text"
                  placeholder="please input todo" :value="text" @input="inputText" />
@@ -18,18 +20,35 @@
             </section>
 
             <section class="list-area">
+                <!--DOING-->
                 <div class="area-incomplete">
                     <p class="todo-title">DOING</p>
                     <ul class="todo-area">
                         <li v-for="(item, i) in incompleteTodo" :keys = "i" class="list">
                             <span class="list-label">{{item.text}}</span>
                             <span class="button-area">
-                                <button class="list-button button-done" @click="toggleIsDone(item,id)">DONE</button>
-                                <button class="list-button button-delete" @click="deleteTodo(item,id)">DELETE</button>
+                                <button class="list-button button-done" @click="toggleIsDone(item.id)">DONE</button>
+                                <button class="list-button button-delete" @click="deleteTodo(item.id)">DELETE</button>
                             </span>
                         </li>
                     </ul>
                 </div>
+                <!--DONE-->
+                <div class="area-complete">
+                    <p class="todo-title">DONE</p>
+                    <ul class="todo-area">
+                        <li v-for="(item, i) in doneTodo" :key="i" class="list">
+                            <span class="list-label">{{item.text}}</span>
+                            <span class="button-area">
+                                <button class="list-button" @click="toggleIsDone(item.id)">RETURN</button>
+                                <button class="list-button" @click="deleteTodo(item.id)">DELETE</button>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+
+
             </section>
         </article>
     </div>
