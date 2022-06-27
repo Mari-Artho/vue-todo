@@ -147,7 +147,7 @@ h1 {
     .add-button {
         width: 250px;
         height:40px;
-        margin: 10px;
+        margin: 10px 0 0 0 ;
         padding: 0;
     }
 
@@ -166,7 +166,8 @@ h1 {
 
    .todo-title {
         text-align: center;
-        margin-top: 20px;
+        margin: 30px 0 0 0;
+        padding: 30px 0 0 0;
         width: 400px;
     }
 
