@@ -6,7 +6,31 @@ new Vue({
             todos: [],
             text: ''
         }
+    }, //data()
+
+    methods: {
+        inputText(e){
+            this.text = e.target.value;
+        },
+
+        addTodo(){
+            if(!this.text) return;
+
+            const text = this.text;
+            const id = Math.ceil(Math.random() * 100);
+            const todo = {
+                id,
+                text,
+                isDone: false
+            };
+            this.todos.push(todo);
+            this.resetText();
+        },
+
+        resetText(){
+            this.text = '' ;
+        }
     }
 
 
-}) //vue()
+}); //vue()
