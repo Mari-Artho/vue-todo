@@ -29,15 +29,11 @@ h1 {
 
 /*Input field*/
 .todo-form {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 50px 0 50px 0 ;
     
-}
-
-.todo-form > .add-button {
-    margin-left: 20px;
-    display:block;
-    text-align: center;
 }
 
 .input-text {
@@ -48,6 +44,7 @@ h1 {
     -webkit-appearance: none;
     border: none;
     box-shadow: 0px 0px 12px #ccc;
+
 }
 
 .add-button {
@@ -58,6 +55,7 @@ h1 {
     background: #ffcbe9ee;
     color: #333;
     border-radius: 4px;
+    margin-left: 10px;
 }
 
 /*TODO List Area*/
@@ -102,11 +100,11 @@ h1 {
 }
 
 .list-button.button-done {
-    background: #4CAF50;
+    background: #59c05c;
 }
 
 .list-button.button-delete {
-    background: #f44336;
+    background: #f3493d;
 }
 
 .list-button.button-return {
@@ -139,16 +137,17 @@ h1 {
         flex-direction: column;
         margin: 10px ;
     }
-    .todo-form > .add-button {
-        margin-left: 0;
-        max-width: fit-content;
+
+    .input-text {
+        margin:auto;
+        margin-bottom: 10px;
     }
 
     .add-button {
         width: 250px;
         height:40px;
-        margin: 10px 0 0 0 ;
         padding: 0;
+        margin:auto;
     }
 
     .list-area {
